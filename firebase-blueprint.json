@@ -1,0 +1,46 @@
+{
+  "entities": {
+    "comments": {
+      "title": "User Comments & Reviews",
+      "description": "Public reviews and feedback from Raqam Flow users",
+      "fields": {
+        "name": {
+          "type": "string",
+          "description": "User's display name"
+        },
+        "comment": {
+          "type": "string",
+          "description": "The review text content"
+        },
+        "rating": {
+          "type": "number",
+          "description": "Rating out of 5"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "ISO timestamp of when comment was posted"
+        }
+      }
+    },
+    "presence": {
+      "title": "Live Site Presence",
+      "description": "Active website visitor sessions",
+      "fields": {
+        "lastSeen": {
+          "type": "string",
+          "description": "Timestamp of last heartbeat"
+        }
+      }
+    },
+    "stats": {
+      "title": "Application Statistics",
+      "description": "App statistics like total download counts",
+      "fields": {
+        "count": {
+          "type": "number",
+          "description": "Total download count"
+        }
+      }
+    }
+  }
+}
